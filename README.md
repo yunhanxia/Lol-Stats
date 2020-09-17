@@ -1,4 +1,4 @@
-# lol_stats
+# Lol Stats
 
 A new Flutter project.
 
