@@ -34,7 +34,11 @@ class HomePage extends StatelessWidget {
               ),
               Text(
                 'Lol Stats',
-                style: TextStyle(color: Colors.red),
+                style: TextStyle(
+                    fontFamily: 'Friz Quadrata',
+                    fontSize: 50,
+                    fontStyle: FontStyle.normal,
+                    color: Colors.red),
               ),
             ],
           ),
