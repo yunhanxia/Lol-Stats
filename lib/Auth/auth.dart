@@ -50,6 +50,9 @@ class _LoginFormState extends State<LoginForm> {
             child: SizedBox(
               width: 300,
               child: TextFormField(
+                enableSuggestions: false,
+                autocorrect: false,
+                obscureText: true,
                 decoration: const InputDecoration(
                   labelText: 'Password',
                   enabledBorder: OutlineInputBorder(
@@ -186,6 +189,9 @@ class _RegisterFormState extends State<RegisterForm> {
             child: SizedBox(
               width: 300,
               child: TextFormField(
+                enableSuggestions: false,
+                autocorrect: false,
+                obscureText: true,
                 decoration: const InputDecoration(
                   labelText: 'Password',
                   enabledBorder: OutlineInputBorder(
@@ -217,6 +223,9 @@ class _RegisterFormState extends State<RegisterForm> {
             child: SizedBox(
               width: 300,
               child: TextFormField(
+                enableSuggestions: false,
+                autocorrect: false,
+                obscureText: true,
                 decoration: const InputDecoration(
                   labelText: 'Confirm password',
                   enabledBorder: OutlineInputBorder(
