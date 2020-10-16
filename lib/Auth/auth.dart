@@ -15,25 +15,65 @@ class _LoginFormState extends State<LoginForm> {
       child: Column(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
-            child: TextFormField(
-              validator: (String value) {
-                if (value.isEmpty) {
-                  return 'Please enter your ID';
-                }
-                return null;
-              },
+            padding: const EdgeInsets.only(top: 40),
+            child: SizedBox(
+              width: 300,
+              child: TextFormField(
+                decoration: const InputDecoration(
+                  labelText: 'ID',
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffc89b3c)),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffc89b3c)),
+                  ),
+                  errorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red),
+                  ),
+                  focusedErrorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red),
+                  ),
+                  labelStyle: TextStyle(color: Color(0xffc89b3c)),
+                ),
+                style: const TextStyle(color: Color(0xffc89b3c)),
+                validator: (String value) {
+                  if (value.isEmpty) {
+                    return 'Please enter your ID';
+                  }
+                  return null;
+                },
+              ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
-            child: TextFormField(
-              validator: (String value) {
-                if (value.isEmpty) {
-                  return 'Please enter your password';
-                }
-                return null;
-              },
+            padding: const EdgeInsets.symmetric(vertical: 20.0),
+            child: SizedBox(
+              width: 300,
+              child: TextFormField(
+                decoration: const InputDecoration(
+                  labelText: 'Password',
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffc89b3c)),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffc89b3c)),
+                  ),
+                  errorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red),
+                  ),
+                  focusedErrorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red),
+                  ),
+                  labelStyle: TextStyle(color: Color(0xffc89b3c)),
+                ),
+                style: const TextStyle(color: Color(0xffc89b3c)),
+                validator: (String value) {
+                  if (value.isEmpty) {
+                    return 'Please enter your password';
+                  }
+                  return null;
+                },
+              ),
             ),
           ),
           Padding(
@@ -111,36 +151,96 @@ class _RegisterFormState extends State<RegisterForm> {
       child: Column(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
-            child: TextFormField(
-              validator: (String value) {
-                if (value.isEmpty) {
-                  return 'Please enter an ID';
-                }
-                return null;
-              },
+            padding: const EdgeInsets.only(top: 40),
+            child: SizedBox(
+              width: 300,
+              child: TextFormField(
+                decoration: const InputDecoration(
+                  labelText: 'ID',
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffc89b3c)),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffc89b3c)),
+                  ),
+                  errorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red),
+                  ),
+                  focusedErrorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red),
+                  ),
+                  labelStyle: TextStyle(color: Color(0xffc89b3c)),
+                ),
+                style: const TextStyle(color: Color(0xffc89b3c)),
+                validator: (String value) {
+                  if (value.isEmpty) {
+                    return 'Please enter an ID';
+                  }
+                  return null;
+                },
+              ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
-            child: TextFormField(
-              validator: (String value) {
-                if (value.isEmpty) {
-                  return 'Please enter a password';
-                }
-                return null;
-              },
+            padding: const EdgeInsets.only(top: 20.0),
+            child: SizedBox(
+              width: 300,
+              child: TextFormField(
+                decoration: const InputDecoration(
+                  labelText: 'Password',
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffc89b3c)),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffc89b3c)),
+                  ),
+                  errorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red),
+                  ),
+                  focusedErrorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red),
+                  ),
+                  labelStyle: TextStyle(color: Color(0xffc89b3c)),
+                ),
+                style: const TextStyle(color: Color(0xffc89b3c)),
+                validator: (String value) {
+                  if (value.isEmpty) {
+                    return 'Please enter a password';
+                  }
+                  return null;
+                },
+              ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
-            child: TextFormField(
-              validator: (String value) {
-                if (value.isEmpty) {
-                  return 'Please confirm your password';
-                }
-                return null;
-              },
+            padding: const EdgeInsets.symmetric(vertical: 20.0),
+            child: SizedBox(
+              width: 300,
+              child: TextFormField(
+                decoration: const InputDecoration(
+                  labelText: 'Confirm password',
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffc89b3c)),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffc89b3c)),
+                  ),
+                  errorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red),
+                  ),
+                  focusedErrorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red),
+                  ),
+                  labelStyle: TextStyle(color: Color(0xffc89b3c)),
+                ),
+                style: const TextStyle(color: Color(0xffc89b3c)),
+                validator: (String value) {
+                  if (value.isEmpty) {
+                    return 'Please confirm your password';
+                  }
+                  return null;
+                },
+              ),
             ),
           ),
           Padding(
